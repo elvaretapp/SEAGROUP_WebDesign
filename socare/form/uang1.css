@@ -1,0 +1,185 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+/* variabel */
+:root {
+    --main-color: #c0c2eb;
+    --text-color:#121212;
+    --container-color:#f0f0fd;
+    --bg-color: #fff;
+    --text-alter-color: #27282b;
+    --poppins-font: "Poppins", sans-serif;
+    --font-family-1: "Raleway", sans-serif;
+    --font-family-2: "Roboto Slab", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: var( --font-family-2);
+}
+
+body {
+    background-image: url('../img/gambar2.jpg'); /* Ganti dengan path gambar yang diunggah */
+    background-size: cover; /* Agar gambar menutupi seluruh halaman */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #cecdcd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button style */
+.close-button {
+    position: absolute;
+    top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #d40000;
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Donation Amount */
+.donation-amount {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nominal {
+    height: 30px;
+    width: 300px; 
+    margin-bottom: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    text-align: center; 
+}
+
+/* Optional message */
+.optional {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Amount Buttons */
+.amount-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.amount-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.amount-btn.active {
+    background-color: #0056b3;
+}
+
+.amount-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Payment Method */
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.message{
+    height: 100px;
+    width: 400px; 
+    margin-top: 7px;
+    margin-bottom: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+}
+
+/* Total Donation */
+.total-donation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#donateButton {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#donateButton:hover {
+    background-color: #218838;
+}
+
+/* Payment Instructions */
+.payment-info {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.account-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checkPaymentStatus {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkPaymentStatus:hover {
+    background-color: #0056b3;
+}

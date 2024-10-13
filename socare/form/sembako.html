@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="sembako.css">
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container" id="donationForm">
+        <a href="../donasi.html">
+        <div class="close-button" id="closeDonationForm">
+            <i class='bx bx-left-arrow-alt'></i>
+        </div>
+    </a>
+        
+        <h1>Donasi Pakaian</h1>
+        <p class="optional">Terima kasih atas kepedulian Anda. Setiap donasi sembako yang Anda berikan bukan hanya meringankan beban, tetapi juga membawa harapan bagi mereka yang membutuhkan. Bersama, kita bisa membuat perubahan nyata di tengah masyarakat. Silakan isi formulir berikut untuk berbagi kebaikan.</p>
+        
+        <form action="/submit-donation" method="POST">
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Nomor Telepon (opsional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Alamat Pengambilan:</label>
+                <textarea id="address" name="address" placeholder="Masukkan alamat lengkap untuk pengambilan pakaian (opsional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="itemType">Jenis Pakaian yang Didonasikan:</label>
+                <input type="text" id="itemType" name="itemType" placeholder="Contoh: Kaos, Celana, Jaket" required>
+            </div>
+
+            <div class="form-group">
+                <label for="condition">Kondisi Pakaian:</label>
+                <select id="condition" name="condition" required>
+                    <option value="layak pakai">Layak Pakai</option>
+                    <option value="tidak layak pakai">Tidak Layak Pakai</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Jumlah Pakaian yang Didonasikan:</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Masukkan jumlah pakaian" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Catatan (opsional):</label>
+                <textarea id="notes" name="notes" placeholder="Jika ada informasi tambahan, masukkan di sini"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="donateButton">Donasikan Sekarang</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="uang1.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="uang1.css">
+     <!-- Box Icons -->
+     <link 
+     href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container" id="donationForm">
+        <div class="close-button" id="closeDonationForm" onclick="goBackToDonations()"><i class='bx bx-left-arrow-alt' ></i>
+        </div>
+        
+
+        <h1>Nominal Donasi</h1>
+        <div class="donation-amount">
+            <span>Rp</span><span id="donationTotal">5.000</span>
+        </div>
+
+        <p class="optional">Donasimu sangat berarti bagi semua, jangan  pernah berhenti untuk terus <strong>Saling Peduli</strong></p>
+
+        <div class="amount-options">
+            <button class="amount-btn" data-amount="1000">1.000</button>
+            <button class="amount-btn" data-amount="2000">2.000</button>
+            <button class="amount-btn active" data-amount="5000">5.000</button>
+            <button class="amount-btn" data-amount="8000">8.000</button>
+            <button class="amount-btn" data-amount="10000">10.000</button>
+            <button class="amount-btn" data-amount="15000">15.000</button>
+        </div>
+
+        <input class="nominal" type="number" placeholder="Masukkan nominal lain" id="customAmount" />
+
+        <div class="payment-method">
+            <span>Metode Pembayaran:</span>
+            <select id="paymentMethod">
+                <option value="gopay">GoPay</option>
+                <option value="shopeepay">ShopeePay</option>
+                <option value="dana">DANA</option>
+                <option value="linkaja">LinkAja</option>
+                <option value="bca" disabled>BCA Virtual Account</option>
+                <option value="mandiri" disabled>Mandiri Virtual Account</option>
+                <option value="bri" disabled>BRI Virtual Account</option>
+                <option value="bni" disabled>BNI Virtual Account</option>
+            </select>
+        </div>
+
+
+        <label><input type="checkbox" id="anonymous"> Sembunyikan nama saya (Donasi Anonim)</label>
+        <br>
+        <textarea class="message" placeholder="Sertakan doa dan dukungan (opsional)" id="message"></textarea>
+
+        <div class="total-donation">
+            <span>Total Donasi</span>
+            <span id="totalDonationDisplay">Rp5.000</span>
+        </div>
+
+        <button id="donateButton" onclick="handleDonate()">Lanjut Pembayaran</button>
+    </div>
+
+    <div class="container" id="paymentInstructions" style="display: none;">
+        <div class="close-button" id="closeDonationForm" onclick="goBackToDonations()"><i class='bx bx-left-arrow-alt' ></i>
+        </div>
+
+        <h2>Instruksi Pembayaran</h2>
+        <p>Batas waktu pembayaran: <strong>Selasa, 08 Okt 2024 08:31</strong></p>
+        <p><span id="countdown">01:59:17</span></p>
+
+        <div class="payment-info">
+            <h3>BCA Virtual Account</h3>
+            <div class="account-number">
+                <p>Nomor Virtual Account</p>
+                <p><strong>1900800019127807</strong> <button onclick="copyAccountNumber()">Salin</button></p>
+            </div>
+            <div class="total-donation">
+                <span>Total Donasi:</span>
+                <span>Rp<span id="paymentTotal"></span></span>
+            </div>
+        </div>
+
+        <button id="checkPaymentStatus">Cek status pembayaran</button>
+    </div>
+
+    <script src="uang1.js"></script>
+</body>
+</html>

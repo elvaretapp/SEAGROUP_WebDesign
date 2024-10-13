@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Error</title>
+    <style>
+        /* Mengatur tampilan untuk halaman secara keseluruhan */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Container untuk pesan error */
+        .error-container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Mengatur tampilan judul error */
+        h1 {
+            color: #d9534f;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Teks pesan */
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Tampilan tombol */
+        .btn-login {
+            display: inline-block;
+            width: 100%;
+            height: 43px;
+            background-color: #151111;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 0.8rem;
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+            text-align: center; /* Pusatkan teks di dalam tombol */
+            line-height: 43px; /* Sesuaikan tinggi untuk memusatkan teks vertikal */
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+            transition: background-color 0.3s; /* Efek transisi untuk warna */
+        }
+
+        /* Hover efek untuk tombol */
+        .btn-login:hover {
+            background-color: #8371fd;
+        }
+    </style>
+</head>
+<body>
+   <div class="error-container">
+      <h1>Email atau Password Anda Salah!</h1>
+      <p>Silahkan coba login kembali.</p>
+      <a href="login.html" class="btn-login">Kembali ke Login</a>
+    </div>
+</body>
+</html>

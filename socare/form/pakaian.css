@@ -1,0 +1,143 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+/* variabel */
+:root {
+    --main-color: #c0c2eb;
+    --text-color: #121212;
+    --container-color: #f0f0fd;
+    --bg-color: #fff;
+    --text-alter-color: #27282b;
+    --poppins-font: "Poppins", sans-serif;
+    --font-family-1: "Raleway", sans-serif;
+    --font-family-2: "Roboto Slab", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: var(--font-family-2);
+}
+
+body {
+    background-image: url('../img/gambar2.jpg'); /* Ganti dengan path gambar yang diunggah */
+    background-size: cover; /* Agar gambar menutupi seluruh halaman */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ubah ke flex-start untuk mendukung scroll */
+    min-height: 100vh; /* Ubah dari height ke min-height */
+    overflow-y: auto; /* Pastikan scroll muncul jika konten lebih tinggi dari viewport */
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 20px; /* Tambahkan margin untuk memberi jarak dari tepi */
+    padding: 20px;
+    border: 1px solid #cecdcd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button style */
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Ubah ke left agar tombol berada di kiri */
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #d40000;
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Optional message */
+.optional {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cecdcd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px; /* Tambahkan margin atas untuk memisahkan label dari input */
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Payment Instructions */
+.payment-info {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.account-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checkPaymentStatus {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkPaymentStatus:hover {
+    background-color: #0056b3;
+}
